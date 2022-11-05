@@ -6,9 +6,10 @@
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,            
     "skipLibCheck": true,
-    "outDir": "./dist"                      
+    "outDir": "./dist"
   },
   "include": [
     "src/**/*.ts",
-  ]
+  ],
+  "exclude": ["node_modules"]
 }
