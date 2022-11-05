@@ -15,4 +15,4 @@ Object.defineProperty(exports, "cpfOrCnpjMask", { enumerable: true, get: functio
 Object.defineProperty(exports, "currencyMask", { enumerable: true, get: function () { return mask_1.currencyMask; } });
 Object.defineProperty(exports, "phoneMask", { enumerable: true, get: function () { return mask_1.phoneMask; } });
 Object.defineProperty(exports, "postalCodeMask", { enumerable: true, get: function () { return mask_1.postalCodeMask; } });
-console.log({ cpf: (0, set_1.default)({ text: '1579479755', type: 'cpf' }) });
+console.log((0, set_1.default)({ text: '15779479755', type: 'cpf' }));

@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "node ./bin/app.js",
+    "start": "node ./dist/index.js",
     "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/index.ts"
   },
   "devDependencies": {
@@ -28,7 +28,7 @@
     "ts-node-dev": "^2.0.0"
   },
   "bin": {
-    "react-mask-input": "bin/app.js"
+    "react-mask-input": "bin/index.js"
   },
   "repository": {
     "type": "git",
