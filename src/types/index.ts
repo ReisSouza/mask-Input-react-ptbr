@@ -1,6 +1,6 @@
 export type MaskProps = 'cnpj' | 'cpf' | 'phone' | 'postalCode' | 'cpfOurCnpj' | 'currency';
 
-export type OptionsCurremcyu =Intl.NumberFormatOptions & {
+export type OptionsCurremcyu = Intl.NumberFormatOptions & {
   locale?:'en-US' | 'pt-BR' | 'fr-FR' | 'it-IT' | 'pt-PT' | 'zh-CN' | 'ja-JP'
 }
 
