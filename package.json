@@ -2,15 +2,13 @@
   "name": "react-mask-input",
   "version": "1.0.0",
   "description": "Create or remove mask for type input CPF | CNPJ | CFPORCNPJ | CURRENCY | PHONE | POSTALCODE",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "author": "Reis Souza",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
     "start": "node ./bin/app.js",
     "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/index.ts"
-  },
-  "dependencies": {
   },
   "devDependencies": {
     "typescript": "*",
@@ -28,5 +26,17 @@
     "eslint-plugin-react-hooks": "4.3.0",
     "prettier": "2.7.1",
     "ts-node-dev": "^2.0.0"
-  }
+  },
+  "bin": {
+    "react-mask-input": "bin/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReisSouza/mask-Input-react-ptbr.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ReisSouza/mask-Input-react-ptbr/issues"
+  },
+  "homepage": "https://github.com/ReisSouza/mask-Input-react-ptbr#readme"
 }
