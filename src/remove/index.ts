@@ -1,6 +1,8 @@
-const removerMask = (value:string) => {
-  if (value.includes('$' || 'R$' || '€' || '£' || '¥')) {
-    return ((Number(value.replace(/[^0-9.-]+/g, '')) / (value.includes('R$') ? 100 : 1))).toFixed(2);
+import { RemoveMaskProps } from '../types';
+
+const removerMask = ({ value, isCurrency }:RemoveMaskProps) => {
+  if (isCurrency) {
+    return Number(value).toFixed(2);
   }
   return value.replace(/[^a-z0-9]/gi, '');
 };

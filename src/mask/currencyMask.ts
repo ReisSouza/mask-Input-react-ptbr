@@ -1,7 +1,5 @@
-import { CurrentType } from '../types';
-
-const currencyMask = ({ options, value }:CurrentType) => {
-  const newCurrency = new Intl.NumberFormat(options?.locale || 'pt-BR', { currency: options?.currency || 'BRL', style: options?.style || 'currency', ...options }).format(Number(value.replace(/\D/g, '')));
-  return newCurrency;
-};
+const currencyMask = (value:string) => value
+  .replace(/\D/g, '')
+  .replace(/(\d)(\d{2})$/, '$1,$2')
+  .replace(/(?=(\d{3})+(\D))\B/g, '.');
 export default currencyMask;
