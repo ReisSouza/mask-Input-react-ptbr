@@ -1,14 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const mask_1 = require("../mask");
-const setMask = ({ text, type, options }) => {
+const setMask = ({ value, type, options }) => {
     const asMaskSelect = {
-        cnpj: (0, mask_1.cnpjMask)(text),
-        cpf: (0, mask_1.cpfMask)(text),
-        cpfOurCnpj: (0, mask_1.cpfOrCnpjMask)(text),
-        phone: (0, mask_1.phoneMask)(text),
-        postalCode: (0, mask_1.postalCodeMask)(text),
-        currency: (0, mask_1.currencyMask)({ text, options }),
+        cnpj: (0, mask_1.cnpjMask)(value),
+        cpf: (0, mask_1.cpfMask)(value),
+        cpfOurCnpj: (0, mask_1.cpfOrCnpjMask)(value),
+        phone: (0, mask_1.phoneMask)(value),
+        postalCode: (0, mask_1.postalCodeMask)(value),
+        currency: (0, mask_1.currencyMask)({ value, options }),
     };
     return asMaskSelect[type];
 };

@@ -6,7 +6,7 @@ export type OptionsCurremcyu = Intl.NumberFormatOptions & {
 
 export type MaskInputProps = {
   type: MaskProps;
-  text: string;
+  value: string;
   options?:OptionsCurremcyu
 };
 

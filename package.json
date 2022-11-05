@@ -1,6 +1,6 @@
 {
   "name": "react-input-mask-br",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Create or remove mask for type input CPF | CNPJ | CFPORCNPJ | CURRENCY | PHONE | POSTALCODE",
   "main": "./dist/index.js",
   "types": "dist/index.d.ts",

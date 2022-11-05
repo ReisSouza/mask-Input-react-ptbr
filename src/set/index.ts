@@ -8,14 +8,14 @@ import {
 } from '../mask';
 import { MaskInputProps, MaskProps } from '../types';
 
-const setMask = ({ text, type, options }: MaskInputProps):string => {
+const setMask = ({ value, type, options }: MaskInputProps):string => {
   const asMaskSelect:Record<MaskProps, string> = {
-    cnpj: cnpjMask(text),
-    cpf: cpfMask(text),
-    cpfOurCnpj: cpfOrCnpjMask(text),
-    phone: phoneMask(text),
-    postalCode: postalCodeMask(text),
-    currency: currencyMask({ text, options }),
+    cnpj: cnpjMask(value),
+    cpf: cpfMask(value),
+    cpfOurCnpj: cpfOrCnpjMask(value),
+    phone: phoneMask(value),
+    postalCode: postalCodeMask(value),
+    currency: currencyMask({ value, options }),
   };
   return asMaskSelect[type];
 };
