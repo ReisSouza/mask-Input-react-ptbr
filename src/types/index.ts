@@ -15,6 +15,6 @@ export type Record<K extends string, T> = {
 };
 
 export type CurrentType = {
-  text:string
+  value:string
   options?:OptionsCurremcyu
 }

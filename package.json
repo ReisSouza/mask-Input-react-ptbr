@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "Create or remove mask for type input CPF | CNPJ | CFPORCNPJ | CURRENCY | PHONE | POSTALCODE",
   "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Reis Souza",
   "license": "MIT",
   "scripts": {
