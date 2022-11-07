@@ -1,0 +1,41 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+  gap:24px;
+
+}
+
+.input {
+  width: 250px;
+  font-weight: 500;
+  font-size: x-large;
+  color:white;
+  padding:8px 24px;
+  background: transparent;
+  border: solid 1px #8B1FF0 ;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.input::placeholder {
+  color:white;
+}
+
+.wrapped-input {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:8px;
+  color:#8B1FF0 ;
+  font-weight: 700;
+  font-size: larger;
+}

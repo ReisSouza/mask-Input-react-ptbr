@@ -1,4 +1,4 @@
-export type MaskProps = 'cnpj' | 'cpf' | 'phone' | 'postalCode' | 'cpfOurCnpj' | 'currency';
+export type MaskProps = 'cnpj' | 'cpf' | 'phone' | 'postalCode' | 'cpfOurCnpj' | 'currency' | 'rg' | 'credCard';
 
 export type OptionsCurremcy = Intl.NumberFormatOptions & {
   locale?:'en-US' | 'pt-BR' | 'fr-FR' | 'it-IT' | 'pt-PT' | 'zh-CN' | 'ja-JP'
@@ -7,13 +7,9 @@ export type OptionsCurremcy = Intl.NumberFormatOptions & {
 export type MaskInputProps = {
   type: MaskProps;
   value: string;
+  prefix?:string;
 };
 
 export type Record<K extends string, T> = {
   [P in K]: T;
 };
-
-export type RemoveMaskProps = {
-  value:string;
-  isCurrency:boolean;
-}

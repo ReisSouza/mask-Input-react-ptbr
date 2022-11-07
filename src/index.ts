@@ -1,5 +1,5 @@
 import {
-  cnpjMask, cpfMask, cpfOrCnpjMask, currencyMask, phoneMask, postalCodeMask,
+  cnpjMask, cpfMask, cpfOurCnpjMask, currencyMask, phoneMask, postalCodeMask, rgMask, credCardMask,
 } from './mask';
 import setMask from './set';
 import removeMask from './remove';
@@ -11,11 +11,13 @@ export {
   setMask,
   cnpjMask,
   cpfMask,
-  cpfOrCnpjMask,
+  cpfOurCnpjMask,
   currencyMask,
   phoneMask,
   postalCodeMask,
   removeMask,
   MaskProps,
   MaskInputProps,
+  credCardMask,
+  rgMask,
 };

@@ -1,6 +1,6 @@
 {
   "name": "react-input-mask-br",
-  "version": "1.1.3",
+  "version": "1.1.7",
   "description": "Create or remove mask for type input CPF | CNPJ | CFPORCNPJ | CURRENCY | PHONE | POSTALCODE",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -9,10 +9,10 @@
   "scripts": {
     "build": "tsc --declaration",
     "start": "node ./dist/index.js",
-    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/index.ts"
+    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules exemple/javascript/exemple-simple.ts"
   },
   "devDependencies": {
-    "typescript": "*",
+    "@types/react-dom": "^18.0.8",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "eslint": "8.2.0",
     "eslint-config-airbnb": "19.0.4",
@@ -26,7 +26,8 @@
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-react-hooks": "4.3.0",
     "prettier": "2.7.1",
-    "ts-node-dev": "^2.0.0"
+    "ts-node-dev": "^2.0.0",
+    "typescript": "*"
   },
   "bin": {
     "react-mask-input": "bin/index.js"
@@ -39,5 +40,8 @@
   "bugs": {
     "url": "https://github.com/ReisSouza/mask-Input-react-ptbr/issues"
   },
-  "homepage": "https://github.com/ReisSouza/mask-Input-react-ptbr#readme"
+  "homepage": "https://github.com/ReisSouza/mask-Input-react-ptbr#readme",
+  "dependencies": {
+    "react-input-mask-br": "^1.1.5"
+  }
 }
