@@ -36,6 +36,7 @@ functionality that allows adding or removing mask to string, working with any re
 * [Type](#type)
 * [Properties setMask](#properties-setMask)
 * [Usage sinle](#usage-single)
+* [Exemples](#exemples)
 
 
 
