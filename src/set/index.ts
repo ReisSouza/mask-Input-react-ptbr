@@ -6,8 +6,9 @@ import {
   currencyMask,
   phoneMask,
   postalCodeMask,
+  obscureEmail,
+  rgMask,
 } from '../mask';
-import rgMask from '../mask/rgMask';
 import { MaskInputProps, MaskProps } from '../types';
 
 const setMask = ({ value, type, prefix }: MaskInputProps):string => {
@@ -20,6 +21,7 @@ const setMask = ({ value, type, prefix }: MaskInputProps):string => {
     currency: currencyMask(value),
     rg: rgMask(value),
     credCard: credCardMask(value),
+    obscureEmail: obscureEmail(value),
   };
 
   const newValue = prefix ? `${prefix} ${asMaskSelect[type]}` : asMaskSelect[type];

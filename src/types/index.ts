@@ -1,4 +1,13 @@
-export type MaskProps = 'cnpj' | 'cpf' | 'phone' | 'postalCode' | 'cpfOurCnpj' | 'currency' | 'rg' | 'credCard';
+export type MaskProps =
+'cnpj' |
+'cpf' |
+'phone' |
+'postalCode' |
+'cpfOurCnpj' |
+'currency' |
+'rg' |
+'credCard' |
+'obscureEmail';
 
 export type OptionsCurremcy = Intl.NumberFormatOptions & {
   locale?:'en-US' | 'pt-BR' | 'fr-FR' | 'it-IT' | 'pt-PT' | 'zh-CN' | 'ja-JP'

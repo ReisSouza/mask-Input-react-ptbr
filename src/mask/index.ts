@@ -6,3 +6,4 @@ export { default as cpfOurCnpjMask } from './cpfOurCnpj';
 export { default as currencyMask } from './currencyMask';
 export { default as rgMask } from './rgMask';
 export { default as credCardMask } from './credCardMask';
+export { default as obscureEmail } from './obscureEmail';

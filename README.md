@@ -26,7 +26,8 @@ functionality that allows adding or removing mask to string, working with any re
 | PHONE
 | CURRENCY
 | POSTALCODE
-| CREDCARD</p>
+| CREDCARD
+| OBSCUREEMAIL</p>
 
 
 
@@ -57,6 +58,7 @@ const maskCPFORCNPJ1 = setMask({ type: 'currency', value: '00000000000' });
 const maskCPFORCNPJ2 = setMask({ type: 'cpfOurCnpj', value: '00000000000000' });
 const maskCredCard = setMask({ type: 'credCard', value: '0000000000000000' });
 const maskCurrency = setMask({ type: 'cpfOurCnpj', value: '100000000' });
+const maskCurrency = setMask({ type: 'obscureEmail', value: 'useradmin@outlook.com' });
 
 console.log({
   maskCPF,
@@ -68,6 +70,7 @@ console.log({
   maskCredCard,
   maskCPFORCNPJ1,
   maskCPFORCNPJ2,
+  maskCurrency
 });
 
 {
@@ -80,6 +83,7 @@ console.log({
   maskCredCard: '0000-0000-0000-0000',
   maskCPFORCNPJ1: 'R$ 000.000.000,00',
   maskCPFORCNPJ2: '00.000.000.0000-00'
+  maskCurrency: 'u********@outlook.com'
 }
 
 const removeCPF = removeMask(maskCPF);
